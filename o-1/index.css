@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #adcbe3;
+}
+
+#oppgavesvar {
+    display: grid;
+    place-items: center;
+}
+
+input {
+    border-radius: 5px;
+    width: 130px;
+    height: 20px;
+    margin: 5px;
+}
+
+#txtSvar {
+    display: grid;
+    place-items: center;
+    background-color: white;
+    margin-top: 20px;
+    width: 280px;
+    height: 30px;
+}
