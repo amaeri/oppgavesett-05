@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+}
+
+body {
+    padding: 1rem;
+    background-color: #adcbe3;
+    color: white;
+    transition: 1s;
+}
+
+#oppgavesvar {
+    margin: 50px;
+}
+
+section {
+  display: grid;  
+  grid-auto-flow: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+button {
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #63ace5;
+    font-weight: 700;
+    color: white;
+}
+
+button:focus {
+    outline: none;
+}

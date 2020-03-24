@@ -2,27 +2,23 @@ const inpAmount = document.querySelector("#inpAmount");
 const btnWit = document.querySelector("#btnWit");
 const btnDep = document.querySelector("#btnDep");
 const txtSvar = document.querySelector("#txtSvar");
+let balance = 500;
 
-function withdrawMoney () {
-    let withdrawText = ""
+txtSvar.innerHTML = `Du har nå kroner ${balance} på kontoen`
+
+function withdrawMoney() {
+    let balanceMinus = balance - inpAmount.value
     if (inpAmount.value <= 500) {
-        withdrawText += `<span>Du har nå kroner ${500 - inpAmount.value} på kontoen </span>`
+        txtSvar.innerHTML = `Du har nå kroner ${balanceMinus} på kontoen`
     } else {
-        withdrawText += `<span>Du har ikke dekning på kontoen</span>`
+        txtSvar.innerHTML = `Du har ikke dekning på kontoen`
+        txtSvar.style.color = "red";
     }
-
-    txtSvar.innerHTML = withdrawText
 }
 
-function depositMoney () {
-    let depositText = ""
-    if (inpAmount.value >= 0) {
-        depositText += `<span>Du har nå kroner ${Number(500) + Number(inpAmount.value)} på kontoen </span>`
-    } else {
-        depositText += `<span>Beløpet er for lavt</span>`
-    }
-
-    txtSvar.innerHTML = depositText
+function depositMoney() {
+    let balancePlus = Number(balance) + Number(inpAmount.value)
+    txtSvar.innerHTML = `Du har nå kroner ${balancePlus} på kontoen`;
 }
 
 btnWit.onclick = withdrawMoney;

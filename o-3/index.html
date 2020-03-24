@@ -1,13 +1,33 @@
 <!DOCTYPE html>
 <html lang='en'>
+
 <head>
     <meta charset='UTF-8'>
-    <meta name='viewport' content='width=device-width', initial-scale='1.0'>
+    <meta name='viewport' content='width=device-width' , initial-scale='1.0'>
     <meta http-equiv='X-UA-Compatible' content='ie=edge'>
-    <title>Document</title>
+    <title>Oppgave 3</title>
     <link rel='stylesheet' href='index.css'>
 </head>
+
 <body>
+    <h1>Oppgave 3</h1>
+    <h4>Bruk teknikken som du lærte om å sette farge på nettsiden med knapper, men la de forskjellige knappene spille av
+        forskjellige lyder.</h4>
+
+    <section id="oppgavesvar">
+
+            <audio src="./audio/bassoon.mp3" id="bassoon"></audio>
+            <audio src="./audio/flute.mp3" id="flute"></audio>
+            <audio src="./audio/clarinet.mp3" id="clarinet"></audio>
+ 
+
+            <button id="btnB" data-sound="bassoon">Bassoon</button>
+            <button id="btnF" data-sound="flute">Flute</button>
+            <button id="btnC" data-sound="clarinet">Clarinet</button>
+
+    </section>
+
     <script src='index.js'></script>
 </body>
+
 </html>
