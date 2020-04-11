@@ -1,6 +1,23 @@
 body {
+    box-sizing: border-box;
+    margin: 0;
+    background-color: white;
+    color: black;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #adcbe3;
+}
+
+main {
+    display: grid;
+    place-items: center;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+#oppgaver {
+    width: 70%;
+    background-color: #8471f2;
+    color: white;
+    padding: 1rem;
 }
 
 #oppgavesvar {
@@ -19,14 +36,15 @@ button {
     margin-left: 10px;
     padding: 5px 10px 5px 10px;
     font-size: 15px;
-    background-color: #63ace5;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 #txtSvar {
     display: grid;
     place-items: center;
     background-color: white;
+    color: black;
     margin-top: 20px;
     border-radius: 5px;
     font-size: 15px;
